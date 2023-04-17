@@ -5,7 +5,7 @@ from engine.willoughby_engine import WilloughbyEngine
 from engine.sternman_engine import SternmanEngine
 
 
-class carfactory :
+class carfactory (Car):
     class Calliope(CapuletEngine):
         def needs_service(self):
             service_threshold_date = self.last_service_date.replace(year=self.last_service_date.year + 2)
